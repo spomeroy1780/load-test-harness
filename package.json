@@ -1,0 +1,20 @@
+{
+  "name": "load-test-harness",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "fetch-swagger": "node generator/fetch-swagger.js",
+    "detect-auth": "node generator/detect-auth.js",
+    "generate-endpoints": "node generator/generate-endpoints.js",
+    "generate-scenerios": "node generator/generate-scenerios.js",
+    "generate-workflows": "node generator/generate-workflows.js",
+    "run": "k6 run k6/test.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "fs-extra": "^11.3.4",
+    "json-schema-faker": "^0.6.0",
+    "papaparse": "^5.5.3",
+    "swagger-parser": "^10.0.3"
+  }
+}

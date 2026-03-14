@@ -1,0 +1,4 @@
+
+config/*
+swagger/*
+node_modules/*
