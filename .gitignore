@@ -1,4 +1,8 @@
 
 config/*
+
 swagger/*
+
+.idea/*
+
 node_modules/*
